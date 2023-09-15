@@ -1,0 +1,78 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 50px;
+  border-bottom: 2px solid blue;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  margin-top: -70px;
+  background-color: #fffae3;
+  width: 50%;
+  border: 2px solid black;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container img {
+  border-radius: 50%;
+  width: 150px;
+  height: 200px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 20px;
+  padding: 10px;
+}
+
+h4 {
+  font-weight: 100;
+  color: blueviolet;
+}
+
+p {
+  font-family: monospace;
+  font-size: 16px;
+
+  padding: 10px;
+  color: #15616d;
+}
+
+.SideScroll button {
+  border: none;
+  background: none;
+  color: #8093f1;
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.SideScroll button:hover {
+  cursor: pointer;
+}
+
+button {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: #f96900;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #f17f29;
+}

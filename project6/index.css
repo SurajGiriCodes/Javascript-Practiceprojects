@@ -1,0 +1,112 @@
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 395px;
+  height: 100%;
+  z-index: 2000;
+  background-color: #f1f0ee;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  transition: all 0.9s;
+}
+.navbar-show {
+  left: 0;
+}
+
+.logo {
+  padding-top: 5px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  font-size: 1.7rem;
+  color: black;
+  background: transparent;
+  border-color: transparent;
+  color: #7d0b19;
+  transition: 0.4s;
+  padding-right: 15px;
+}
+.fa:hover {
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.logo img {
+  height: 60px;
+  display: block;
+}
+
+.nav-content {
+  padding-top: 40px;
+  padding-left: 50px;
+  display: block;
+  list-style-type: none;
+  text-decoration: none;
+  color: darkorchid;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 65px;
+}
+
+a {
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.nav-content a:hover {
+  cursor: pointer;
+  padding-left: 30px;
+  color: #363038;
+}
+
+.icone-bar {
+  padding-top: 310px;
+  display: flex;
+  justify-content: center;
+}
+
+.icone-bar li {
+  margin-left: 19px;
+  color: darkorchid;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.icone-bar li:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.nav-toggle {
+  position: fixed;
+  top: 24px;
+  right: 48px;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: #35495c;
+  transition: 0.9s;
+  cursor: pointer;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+}
