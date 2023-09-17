@@ -46,12 +46,14 @@ scrollLink.forEach((link) => {
     const navHeight = navbar.getBoundingClientRect().height;
     const containerHeight = linksContainer.getBoundingClientRect().height;
     const fixedNav = navbar.classList.contains("fixed-nav");
+    const img = document.querySelector(".logo");
+
     let position = element.offsetTop - navHeight;
 
     if (!fixedNav) {
       position = position - navHeight;
     }
-    if (navHeight > 82) {
+    if (navHeight > 90) {
       position = position + containerHeight;
     }
 
